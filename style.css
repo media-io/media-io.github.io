@@ -1,0 +1,46 @@
+
+@font-face {
+    font-family: 'BigBottomTypeface';
+    src: url('fonts/Big_Bottom_Typeface_Normal.eot');
+    src: local('Big Bottom Typeface'),
+         url('fonts/Big_Bottom_Typeface_Normal.ttf') format('truetype'),
+         url('fonts/Big_Bottom_Typeface_Normal.svg') format('svg');
+}
+
+body {
+  font-family: 'Verdana';
+}
+
+body, h1 {
+  margin: 0;
+  padding: 0;
+}
+
+a.name {
+  font-family: BigBottomTypeface;
+}
+
+.header {
+  font-family: BigBottomTypeface;
+  color: #b7de36;
+  vertical-align: middle;
+  background-color: #3582b1;
+  padding-left: 10px;
+}
+
+.header img {
+  height: 60px;
+}
+
+.header span {
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+.main-content {
+  padding-left: 10px;
+}
+
+.title {
+  font-family: BigBottomTypeface;
+}
