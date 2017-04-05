@@ -32,6 +32,32 @@ a.name {
   letter-spacing: 1.5px;
 }
 
+.icon.social {
+  height: 45px;
+  width: 45px;
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+  display: inline-block;
+  color: #fff;
+  border-color: rgba(0,0,0,0.2);
+}
+
+.icon.social.github {
+  background-color: #444;
+}
+
+.icon.social.linkedin {
+  background-color: #007bb6;
+}
+
+.icon.social i {
+  line-height: 45px;
+  font-size: 1.8em;
+}
+
 .header {
   font-family: 'Curse Casual';
   letter-spacing: 3px;
