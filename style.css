@@ -7,6 +7,17 @@
          url('fonts/Big_Bottom_Typeface_Normal.svg') format('svg');
 }
 
+@font-face {
+  font-family: 'Curse Casual';
+  src: url('fonts/CurseCasualRegular.eot');
+  src: url('fonts/CurseCasualRegular.eot?#iefix') format('embedded-opentype'),
+    url('fonts/CurseCasualRegular.woff2') format('woff2'),
+    url('fonts/CurseCasualRegular.woff') format('woff'),
+    url('fonts/CurseCasualRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   font-family: 'Verdana';
 }
@@ -17,11 +28,13 @@ body, h1 {
 }
 
 a.name {
-  font-family: BigBottomTypeface;
+  font-family: 'Curse Casual';
+  letter-spacing: 1.5px;
 }
 
 .header {
-  font-family: BigBottomTypeface;
+  font-family: 'Curse Casual';
+  letter-spacing: 3px;
   color: #b7de36;
   vertical-align: middle;
   background-color: #3582b1;
@@ -29,7 +42,7 @@ a.name {
 }
 
 .header img {
-  height: 60px;
+  height: 35px;
 }
 
 .header span {
@@ -42,5 +55,57 @@ a.name {
 }
 
 .title {
-  font-family: BigBottomTypeface;
+  font-family: 'Curse Casual';
+  letter-spacing: 1.5px;
+  color: #3582b1
+}
+
+.schema {
+  text-align: center;
+  padding: 20px;
+  width: 80vw;
+  margin: auto;
+}
+
+.schema .arrow,
+.schema .link {
+  color: #3582b1;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.schema .framework {
+  color: #fff;
+  font-weight: bold;
+  background-color: #3582b1;
+  text-align: center;
+  padding: 20px;
+}
+
+.schema .link {
+  width: 20vw;
+}
+
+.schema .component {
+  margin-top: 10px;
+  border: 2px solid #3582b1;
+  text-align: center;
+  padding: 5px;
+  display: inline-block;
+  width: 20vw;
+}
+
+.schema.flow .component {
+  width: 15vw;
+}
+
+.plugins li label {
+  display: inline-block;
+  width: 200px;
+  color: #3582b1;
+}
+
+.plugins .unwrapper:nth-child(2) {
+  border-top: 1px solid #ddd;
 }
