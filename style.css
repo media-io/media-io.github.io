@@ -37,8 +37,8 @@ a.name {
 }
 
 .icon.social {
-  height: 45px;
-  width: 45px;
+  height: 100px;
+  width: 100px;
   padding-left: 0;
   padding-right: 0;
   font-size: 18px;
@@ -58,8 +58,20 @@ a.name {
 }
 
 .icon.social i {
-  line-height: 45px;
-  font-size: 1.8em;
+  line-height: 100px;
+  font-size: 4em;
+}
+
+@media screen and (min-width: 1000px) {
+  .icon.social {
+    height: 45px;
+    width: 45px;
+  }
+
+  .icon.social i {
+    line-height: 45px;
+    font-size: 1.8em;
+  }
 }
 
 .header {
@@ -75,12 +87,35 @@ a.name {
 }
 
 .header img {
-  height: 35px;
+  height: 115px;
 }
 
 .header span {
-  font-size: 1.5em;
-  line-height: 1.5em;
+  font-size: 5em;
+  line-height: 1em;
+}
+
+.forkme img {
+  position: fixed;
+  top: 0;
+  right: 0;
+  border: 0;
+  height: 250px;
+}
+
+@media screen and (min-width: 1000px) {
+  .header img {
+    height: 35px;
+  }
+
+  .header span {
+    font-size: 1.5em;
+    line-height: 1.5em;
+  }
+
+  .forkme img {
+    height: 149px;
+  }
 }
 
 .main-content {
@@ -97,7 +132,7 @@ a.name {
 .schema {
   text-align: center;
   padding: 20px;
-  width: 80vw;
+  /*width: 80vw;*/
   margin: auto;
 }
 
@@ -127,7 +162,7 @@ a.name {
   text-align: center;
   padding: 5px;
   display: inline-block;
-  width: 20vw;
+  /*width: 20vw;*/
 }
 
 .schema.flow .component {
@@ -135,9 +170,16 @@ a.name {
 }
 
 .plugins li label {
-  display: inline-block;
-  width: 200px;
+  display: block;
   color: #3582b1;
+  font-size: 1em;
+}
+
+@media screen and (min-width: 1000px) {
+  .plugins li label {
+    display: inline-block;
+    width: 200px;
+  }
 }
 
 .plugins .unwrapper:nth-child(2) {
