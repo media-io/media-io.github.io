@@ -18,6 +18,17 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Castorgate';
+  src: url('fonts/Castorgate.eot');
+  src: url('fonts/Castorgate.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Castorgate.woff2') format('woff2'),
+    url('fonts/Castorgate.woff') format('woff'),
+    url('fonts/Castorgate.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   font-family: 'Verdana';
   font-size: 30px;
@@ -40,7 +51,7 @@ a:link {
 }
 
 a.name {
-  font-family: 'Curse Casual';
+  font-family: 'Castorgate';
   letter-spacing: 1.5px;
 }
 
@@ -83,19 +94,32 @@ a.name {
 }
 
 .header {
-  font-family: 'Curse Casual';
+  font-family: 'Castorgate';
   letter-spacing: 3px;
-  color: #b7de36;
+  color: #fff;
   vertical-align: middle;
-  background-color: #3582b1;
+  background-color: #3864AA;
   padding-left: 10px;
   position: fixed;
   width: 100vw;
   top: 0;
+  min-height: 80px;
 }
 
-.header img {
-  height: 115px;
+.header .text {
+  margin-right: -20px;
+}
+
+.header .image {
+  display: inline-block;
+  overflow: hidden;
+  height: 60px;
+  vertical-align: middle;
+  margin-top: -20px;
+}
+
+.header .image img {
+  height: 80px;
 }
 
 .header span {
@@ -113,7 +137,7 @@ a.name {
 
 @media screen and (min-width: 1000px) {
   .header img {
-    height: 35px;
+    /*height: 35px;*/
   }
 
   .header span {
@@ -132,9 +156,9 @@ a.name {
 }
 
 .title {
-  font-family: 'Curse Casual';
+  font-family: 'Castorgate';
   letter-spacing: 1.5px;
-  color: #3582b1
+  color: #3864AA
 }
 
 .schema {

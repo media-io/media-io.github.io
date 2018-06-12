@@ -53,274 +53,31 @@
 <body>
   <div class="header">
     <h1>
-      <img src="media-io.svg"/>
-      <span>
-        Media-IO
+      <span class=text>
+        Media
+      </span>
+      <span class=image>
+        <img src="media-io.svg"/>
       </span>
     </h1>
   </div>
-  <a href="https://github.com/media-io" target="_blank" class="forkme">
-    <img src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png">
-  </a>
   <div class="main-content">
-    <div class="title">
-      <h2>
-          What is this ?
-      </h2>
-    </div>
-    <div>
-      <a class="name">Media-IO</a> is a new framework to process media, including video, audio, subtitle, etc.<br/>
-      Its architecture is plugin oriented to offer the ability to  easilly connect new features in various languages, such as C++, Rust, and others.<br/>
-      This project is inspired by FFmpeg/LibAV, upipe, AvTranscoder (C++ binding over FFmpeg/Libav), TuttleOFX.
-    </div>
-    <div class="title">
-      <h2>
-          Framework Architecture
-      </h2>
-    </div>
-    <div>
-      Media Framework describes the protocol used in every component.<br/>
-      The C protocol is the core of this project.<br/>
-      On both sides, any language supporting C mangling can be used.<br/>
-      <div class="schema">
-        <div class="framework"><a class="name">Media-IO</a> Framework
-        </div>
-        <div class=link>&darr;</div>
-        <div class=link>&darr;</div>
-        <div class=link>&darr;</div>
-        <div class="component">Component - Unwrapper
-        </div>
-        <div class="component">Component - Decoder
-        </div>
-        <div class="component">Component - Analyser
-        </div>
-      </div>
-
-      Based on that each component is defined as a plugin. Each one can be detected at the run-time.<br/>
-      The first version of this framework will define:
-      <ul>
-        <li><b>Reader</b>: interface to read data like FileSystem or over HTTP</li>
-        <li><b>Unwrapper</b>: provide access to packets of data for each stream</li>
-        <li><b>Decoder</b>: give the capability to decode a coded stream to raw images</li>
-        <li><b>Generator</b>: generate images based on chart definitions, equations, etc.</li>
-        <li><b>Filter</b>: take image to return a processed version</li>
-        <li><b>Analyser</b>: return computed informations based on image(s)</li>
-        <li><b>Encoder</b>: generate the coded stream</li>
-        <li><b>Wrapper</b>: mux coded streams</li>
-        <li><b>Writer</b>: store wrapped data on storage</li>
-      </ul>
-      For each one, some plugins will be defined providing specific processing capabilities.<br/>
-      An important fact is the facility to create new plugin. Each process can be defined in different language (C, C++, Rust, D, etc.) as each one can provide the C ABI required for communication.
-    </div>
-    <div class="title">
-      <h2>
-          Plugin list
-      </h2>
-    </div>
-    <div>
-      <ul class="plugins">
-        <li class="reader">
-          <label>File System Reader</label>
-          Read data from local file system
-        </li>
-        <li class="reader">
-          <label>HTTP Reader</label>
-          Read data over HTTP
-        </li>
-        <li class="writer">
-          <label>File System Writer</label>
-          Write data to local file system
-        </li>
-        <li class="writer">
-          <label>HTTP Writer</label>
-          Write data over HTTP
-        </li>
-        <li class="generator">
-          <label>Chart</label>
-          Generate chart image
-        </li>
-        <li class="generator">
-          <label>Constant</label>
-          Generate constant colored image
-        </li>
-        <li class="generator">
-          <label>SeExpr</label>
-          Generator based on SeExpr library
-        </li>
-        <li class="unwrapper">
-          <label>AsDcpLib Unwrapper</label>
-          Unwrapper for DCP essences
-        </li>
-        <li class="unwrapper">
-          <label>As02Lib Unwrapper</label>
-          Unwrapper for AS-02 like essences
-        </li>
-        <li class="unwrapper">
-          <label>FFmpeg Unwrapper</label>
-          Unwrapping content based on FFMpeg library
-        </li>
-        <li class="unwrapper">
-          <label>Mxf Unwrapper</label>
-          Unwrap MXF essences using internal library
-        </li>
-        <li class="unwrapper">
-          <label>Sequence Unwrapper</label>
-          Read image sequences of any type
-        </li>
-        <li class="wrapper">
-          <label>Sequence wrapper</label>
-          Write image sequences of any type
-        </li>
-        <li class="wrapper">
-          <label>Gpac wrapper</label>
-          Wrapper for Mp4/DASH format
-        </li>
-        <li class="decoder">
-          <label>FFmpeg Decoder</label>
-          Decoding based on FFmpeg library
-        </li>
-        <li class="decoder">
-          <label>Jpeg2000 Decoder</label>
-          Extract stream information into Jpeg2000 codestreams
-        </li>
-        <li class="decoder">
-          <label>OpenJpeg Decoder</label>
-          Decoder Jpeg2000 using OpenJpeg library
-        </li>
-        <li class="decoder">
-          <label>TIFF Decoder</label>
-          Decode TIFF image format
-        </li>
-        <li class="encoder">
-          <label>TIFF Encoder</label>
-          Encode TIFF image format
-        </li>
-        <li class="encoder">
-          <label>HEVC Encoder</label>
-          Encode HEVC using TuringCodec
-        </li>
-        <li class="filter">
-          <label>Black And White</label>
-          Convert image to Black And White
-        </li>
-        <li class="filter">
-          <label>Canny</label>
-          Process Canny filter on image
-        </li>
-        <li class="filter">
-          <label>Color Matrix</label>
-          Process color transformation based on some profiles (Rec601, Rec709, BT.2020, XYZ, etc.)
-        </li>
-        <li class="filter">
-          <label>Gamma</label>
-          Apply a gamma on image
-        </li>
-        <li class="filter">
-          <label>Math</label>
-          Apply math operator on a image (plus, minus, multiply, division)
-        </li>
-        <li class="filter">
-          <label>Text</label>
-          Apply a text on image
-        </li>
-        <li class="analyser">
-          <label>Blur Metric</label>
-          Analyse blur on images
-        </li>
-        <li class="analyser">
-          <label>Comparator</label>
-          Compare 2 images (mathematically)
-        </li>
-        <li class="analyser">
-          <label>PSNR Analyser</label>
-          process PSNR measurement between images
-        </li>
-        <li class="analyser">
-          <label>Statistics Analyser</label>
-          Process some statistical analysis on image
-        </li>
-      </ul>
-    </div>
-    <div class="title">
-      <h2>
-          Cloud enable processing with <a class="name">Media-IO</a>
-      </h2>
-    </div>
-    <div>
-    As a new software and with the technology changes, it will be good to provide the capability to distribute processes on various instances.<br/>
-    Regarding other tools, the process is by default contiguous - the entire file will be processed by 1 instance. Some adaptation / hack can provide a per GOP transcoding, to generate parts of the content, and a second step generate the final mux.<br/>
-    In <a class="name">Media-IO</a>, a full distributed architecture is in test. This means each part of the encoding can be done by any deployed instance, providing with that an adapted number of resources to decode but also for encoding.<br/>
-    Regarding the consuming time for encoding (in comparison to the decoding) it can be a great idea to proceed like that. It's also a great opportunity to have some dedicated instances: with boost IO for Unwrapper and Wrapper workers, and maybe GPU instances for Filters and Analysers.<br/>
-    The state of this architecture still in progress, it require a little bit of time to create the base of workers, and an optimised strategy of process.
-    </div>
-    <div class="title">
-      <h2>
-          Use cases
-      </h2>
-    </div>
-    <div>
-      <ul>
-        <li><b>Generator for IMF App4 plugfest</b></li>
-        Goal: Generate sequences of images to test capabilities of the standard.<br/>
-        One sequence is for color test, based on Chart generator.<br/>
-        Other sequences display timecode for different frame rate with various resolutions.<br/>
-
-        <div class="schema flow">
-          <div class="component">Generator<br/>Chart &amp; Timecode</div>
-          <div class="arrow">&rarr;</div>
-          <div class="component">Encode<br/>TIFF Encoder</div>
-          <div class="arrow">&rarr;</div>
-          <div class="component">Wrapper<br/>Image sequence</div>
-          <div class="arrow">&rarr;</div>
-          <div class="component">Writer<br/>File system</div>
-        </div>
-        <center>
-          <div style="display: inline-block;">
-            <img src="images/seq1.thumbnail.jpg" width="130px">
-            <br/>Sequence 1
-          </div>
-          <div style="display: inline-block;">
-            <img src="images/seq2.thumbnail.jpg" width="130px">
-            <br/>Sequence 2
-          </div>
-          <div style="display: inline-block;">
-            <img src="images/seq3.thumbnail.jpg" width="130px">
-            <br/>Sequence 3
-          </div>
-        </center>
-        <li><b>Color conversion validator for IMF App4 validation</b></li>
-        Goal: To be able to measure the maximum difference between 2 sequences of images.<br/>The first one is IMF package generated by participants.<br/>
-        The second source is reference sequence.<br/>
-        For each image, the output report the maximal difference between values.
-        <div class="schema flow">
-          <div style="display: inline-block; float: left;">
-            <div class="component">Reader<br/>File system</div>
-            <div class="arrow">&rarr;</div>
-            <div class="component">Unwrapper<br/>ASDCPlib</div>
-            <div class="arrow">&rarr;</div>
-            <div class="component">Decode<br/>OpenJpeg J2K</div>
-            <div class="arrow">&rarr;</div>
-          </div>
-          <div style="display: inline-block; float: left;">
-            <div class="component">Reader<br/>File system</div>
-            <div class="arrow">&rarr;</div>
-            <div class="component">Unwrapper<br/>Image Sequence</div>
-            <div class="arrow">&rarr;</div>
-            <div class="component">Decode<br/>TIFF Decoder</div>
-            <div class="arrow">&rarr;</div>
-          </div>
-          <div class="component" style="height: 70px; padding-top: 35px;">Analyser<br/>Diff</div>
-        </div>
-        <li><b>HEVC HDR Proof of Concept (in process)</b></li>
-        Generate an engine to transcode a broadcast stream into HEVC with information of HDR/HLG.<br/>
-        The goal is to achieve a realtime time transcoding in HEVC, based on TuringCodec, with distributed encoders.
-      </ul>
-    </div>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
     <center>
+    <div class="title">
+      <h2>
+          Coming soon...
+      </h2>
+    </div>
+    <div>
+      <a class="name">Media-IO</a> is developping the core engine.<br/>
+      More details will be share soon as possible.<br/>
+      Don't hesitate to contact us anyway.
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    
     Contact: Marc-Antoine Arnaud
     <br/>
     <br/>
