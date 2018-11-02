@@ -86,6 +86,7 @@ a.name span {
 .main {
   font-size: 1.4em;
   line-height: 1.4em;
+  padding-bottom: 30px;
 }
 
 .main .name {
@@ -95,6 +96,15 @@ a.name span {
 .main .name img {
   padding-left: 3px;
   height: 25px;
+}
+
+.section {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.section:nth-child(2n) {
+  background-color: #f1f1f1;
 }
 
 .icons {
@@ -145,7 +155,6 @@ a.name span {
   color: #fff;
   vertical-align: middle;
   background-color: #3864AA;
-  padding-left: 30px;
   width: 100vw;
   min-height: 80px;
   box-shadow: 1px 1px 5px 0px #3864AA;
@@ -174,7 +183,6 @@ a.name span {
 
 .main-content {
   margin-top: 40px;
-  padding-left: 10px;
   display: inline-block;
   text-align: center;
 }
@@ -220,10 +228,11 @@ a.name span {
 
   .main-content {
     display: inline-block;
-    width: 65vw;
+    width: 67vw;
     margin-left: 33vw;
     margin-top: 100px;
-    padding-right: 20px;
+    padding-right: 0px;
+    padding-left: 0px;
   }
 }
 
@@ -254,8 +263,17 @@ a.name span {
   padding-left: 5px;
 }
 
+.expertises .item .links img {
+  width: 25px;
+}
+
 .membership img {
   height: 80px;
+  padding-left: 25px;
+}
+
+.membership a:nth-child(1) img {
+  padding-left: 0px;
 }
 
 .contact {
