@@ -87,6 +87,7 @@ a.name span {
   font-size: 1.4em;
   line-height: 1.4em;
   padding-bottom: 30px;
+  font-weight: 100;
 }
 
 .main .name {
@@ -158,6 +159,7 @@ a.name span {
   width: 100vw;
   min-height: 80px;
   box-shadow: 1px 1px 5px 0px #3864AA;
+  z-index: 100;
 }
 
 .header .text {
@@ -185,6 +187,28 @@ a.name span {
   margin-top: 40px;
   display: inline-block;
   text-align: center;
+}
+
+.main-content .menu {
+  position: fixed;
+  top: 0;
+  width: 67vw;
+  background-color: #fafafa;
+  box-shadow: 1px 1px 5px 0 #fafafa;
+  color: #3864AA;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 0.8em;
+}
+
+.main-content .menu span {
+  display: inline-block;
+  min-width: 100px;
+}
+
+.main-content .menu span:hover {
+  color: #769edd;
+  cursor: pointer;
 }
 
 .title h2 {
@@ -280,6 +304,25 @@ a.name span {
   margin-bottom: 50px;
 }
 
+.contact .title{
+  font-size: 0.8em;
+}
+
 .email {
   font-family: 'Libel';
+}
+
+.software {
+  margin-bottom: 20px;
+}
+.software label {
+  color: #3864AA;
+  display: inline-block;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+}
+
+.moredetails {
+  font-size: 0.8em;
+  color: #666;
 }
