@@ -48,8 +48,22 @@
 body {
   font-family: 'Verdana';
   font-size: 30px;
+  color: #fff;
+}
 
-  background-color: #fafafa;
+.background {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #1e5799;
+  background: -moz-linear-gradient(-45deg, #1e5799 0%, #213b65 100%);
+  background: -webkit-linear-gradient(-45deg, #1e5799 0%,#213b65 100%);
+  background: linear-gradient(135deg, #1e5799 0%,#213b65 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#213b65',GradientType=1 );
+
 }
 
 a:link,
@@ -91,7 +105,7 @@ a.name span {
 }
 
 .main .name {
-  color: #3864AA;
+  color: #c7d732;
   font-size: 1.4em;
 }
 .main .name img {
@@ -102,10 +116,6 @@ a.name span {
 .section {
   padding-top: 10px;
   padding-bottom: 20px;
-}
-
-.section:nth-child(2n) {
-  background-color: #f1f1f1;
 }
 
 .icons {
@@ -126,7 +136,7 @@ a.name span {
 }
 
 .icon.social.github {
-  background-color: #444;
+  background-color: #222;
 }
 
 .icon.social.linkedin {
@@ -151,63 +161,65 @@ a.name span {
 }
 
 .header {
+  position: fixed;
+  height: 80px;
   font-family: 'Castorgate';
   letter-spacing: 1.5px;
   color: #fff;
   vertical-align: middle;
-  background-color: #3864AA;
   width: 100vw;
   min-height: 80px;
-  box-shadow: 1px 1px 5px 0px #3864AA;
   z-index: 100;
+  display: flex;
+}
+
+.header h1 {
+  text-align: center;
+  display: inline-block;
+  margin: auto;
+  height: 100%;
+  padding-left: 20px;
 }
 
 .header .text {
-  margin-right: -50px;
-  font-weight: 100;
+  vertical-align: middle;
 }
 
 .header .image {
+  vertical-align: middle;
   display: inline-block;
+  height: 100%;
 }
 
 .header .image img {
-  height: 150px;
-  vertical-align: bottom;
-  margin-bottom: 15px;
+  height: 100%;
 }
 
 .header span {
-  font-size: 3em;
-  letter-spacing: 3px;
-  line-height: 1em;
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+.header .filler {
+  flex: 1;
+}
+
+.header .menu {
+  display: inline-block;
+  vertical-align: middle;
+  margin: auto;
+  padding-right: 20px;
 }
 
 .main-content {
-  margin-top: 40px;
+  width: 100%;
+  margin-top: 120px;
   display: inline-block;
   text-align: center;
 }
 
-.main-content .menu {
-  position: fixed;
-  top: 0;
-  width: 67vw;
-  background-color: #fafafa;
-  box-shadow: 1px 1px 5px 0 #fafafa;
-  color: #3864AA;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  font-size: 0.8em;
-}
-
-.main-content .menu span {
-  display: inline-block;
-  min-width: 100px;
-}
-
-.main-content .menu span:hover {
-  color: #769edd;
+.header .menu span:hover {
+  color: #c7d732;
   cursor: pointer;
 }
 
@@ -215,48 +227,12 @@ a.name span {
   font-weight: bold;
   font-family: 'Castorgate';
   letter-spacing: 1.5px;
-  color: #3864AA;
+  color: #c7d732;
 }
 
 @media screen and (min-width: 1000px) {
   .header span {
-    font-size: 1.5em;
-    line-height: 1.5em;
-  }
 
-  .header {
-    box-shadow: 1px 1px 5px 0 #3864AA;
-    width: 33vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding-left: 0px;
-  }
-
-  .header .text {
-    margin-right: 0px;
-    vertical-align: top;
-    margin-top: 40px;
-    display: inline-block;
-  }
-
-  .header h1 {
-    text-align: center;
-    display: inline-block;
-    margin: auto;
-    width: 100%;
-    height: 100%;
-    padding-top: 40vh;
-  }
-
-  .main-content {
-    display: inline-block;
-    width: 67vw;
-    margin-left: 33vw;
-    margin-top: 100px;
-    padding-right: 0px;
-    padding-left: 0px;
   }
 }
 
@@ -272,7 +248,7 @@ a.name span {
   font-weight: bold;
   font-family: 'Castorgate';
   letter-spacing: 1.5px;
-  color: #3864AA;
+  color: #c7d732;
   text-align: right;
 }
 
@@ -316,7 +292,7 @@ a.name span {
   margin-bottom: 20px;
 }
 .software label {
-  color: #3864AA;
+  color: #c7d732;
   display: inline-block;
   margin-bottom: 5px;
   padding-bottom: 5px;
@@ -326,3 +302,17 @@ a.name span {
   font-size: 0.8em;
   color: #666;
 }
+
+
+.catalog img,
+.webplayer img {
+  height: 100px;
+  filter: invert(100%);
+  opacity: 0.6;
+}
+
+.catalog .content,
+.webplayer .content {
+  margin: auto;
+}
+
