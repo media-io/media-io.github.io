@@ -9,3 +9,6 @@
   
 - name: News
   link: /news.html
+
+- name: Contact
+  link: /contact.html
