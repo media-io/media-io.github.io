@@ -13,7 +13,3 @@
 - name: Facebook
   link: /
   image: facebook.svg
-
-- name: E-mail
-  link: mailto:contact@media-io.com
-  image: email.svg
