@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Media-IO documentations</title>
+  <style type="text/css">
+    body {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .header {
+      height: 100vh;
+      background: #1e5799;
+      background: -moz-linear-gradient(-45deg, #1e5799 0%, #213b65 100%);
+      background: -webkit-linear-gradient(-45deg, #1e5799 0%,#213b65 100%);
+      background: linear-gradient(135deg, #1e5799 0%,#213b65 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#213b65',GradientType=1 );
+      padding: 5px;
+      position: fixed;
+      top: 0;
+      width: 100vw;
+      z-index: 100;
+      color: #ddd;
+      font-family: "Fira Sans", sans-serif;
+    }
+    .header .title {
+      display: block;
+      font-size: 2em;
+      text-align: center;
+    }
+    .libraries {
+      display: flex;
+    }
+    .header .library {
+      flex: 1;
+    }
+    .header .library .intern {
+      width: 100%;
+      display: inline-block;
+      text-align: center;
+      vertical-align: middle;
+      min-height: 200px;
+      margin: auto;
+      box-shadow: 0px 0px 0px 2px hsla(212, 67%, 40%, 1) inset;
+      margin: 5px;
+      cursor: pointer;
+    }
+
+    .header .library .intern:hover {
+      background-color: hsla(212, 67%, 40%, 1);
+    }
+    .header .library a {
+      text-decoration: none;
+      flex: 1;
+    }
+    .header .library label {
+      line-height: 200px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <span class="title">
+      Media-IO documentations
+    </span>
+
+    <div class="libraries">
+      <span class="library">
+        <a href="https://media-io.com/docs/webplayer/player">
+          <span class="intern">
+            <label style="color: #fff; cursor: pointer;">WebPlayer</label>
+          </span>
+        </a>
+      </span>
+      <span class="library">
+        <a href="https://media-io.com/docs/backend">
+          <span class="intern">
+            <label style="color: #fff; cursor: pointer;">Backend</label>
+          </span>
+        </a>
+      </span>
+      <span class="library">
+        <a href="https://media-io.com/docs/io/mxf_io">
+          <span class="intern">
+            <label style="color: #fff; cursor: pointer;">MXF</label>
+          </span>
+        </a>
+      </span>
+    </div>
+  </div>
+</body>
+</html>

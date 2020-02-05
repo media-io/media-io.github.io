@@ -284,7 +284,7 @@ a.name span {
   font-size: 0.8em;
 }
 
-.email {
+.contactemail {
   font-family: 'Libel';
 }
 
@@ -316,3 +316,25 @@ a.name span {
   margin: auto;
 }
 
+.newsletter {
+  display: inline-block;
+  text-decoration: none;
+  color: #0b4c8a;
+  cursor: pointer;
+  border: 1px solid #c7d732;
+  border-radius: 4px;
+  padding-right: 10px;
+
+  background: #c7d732;
+  outline: none;
+}
+
+.newsletter:hover {
+  color: #0b4c8a;
+  background: #dde687;
+}
+
+.newsletter img {
+  height: 40px;
+  vertical-align: middle;
+}
