@@ -1,0 +1,7 @@
+<nav>
+  {% for item in site.data.network %}
+    <a href="{{ item.link }}" class="network-item">
+      <img src="assets/images/{{item.image}}" alt="{{ item.name }}" />
+    </a>
+  {% endfor %}
+</nav>

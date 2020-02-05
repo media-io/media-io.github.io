@@ -1,0 +1,19 @@
+- name: Newsletter
+  link: http://eepurl.com/gr3E0X 
+  image: newsletter.svg
+
+- name: LinkedIn
+  link: https://www.linkedin.com/company/media-io/
+  image: linkedin.svg
+
+- name: Twitter
+  link: /about.html
+  image: twitter.svg
+
+- name: Facebook
+  link: /
+  image: facebook.svg
+
+- name: E-mail
+  link: mailto:contact@media-io.com
+  image: email.svg

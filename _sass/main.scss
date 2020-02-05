@@ -1,0 +1,74 @@
+@font-face {
+font-family: "Castorgate";
+src: url("/assets/fonts/Castorgate.eot");
+src: url("/assets/fonts/Castorgate.woff") format("woff"),
+url("/assets/fonts/Castorgate.svg#filename") format("svg");
+}
+
+
+body {
+  margin: 0;
+}
+
+.navigation-item:hover,
+.network-item:hover {
+  color: white;
+}
+
+.navigation-item,
+.network-item {
+  color: rgba(255,255,255,.7);
+  text-decoration: none;
+}
+.navigation-item{
+  font-family: "Castorgate";
+  letter-spacing: 3px;
+  font-size: 0.8em;
+}
+
+.network-item {
+  font-size: 0.5em;
+}
+
+.network-item img {
+  width: 20px;
+  background-color: rgba(255,255,255,.7);
+  border-radius: 50%;
+  padding: 7px;
+}
+
+.current {
+  color: #fff;
+}
+
+.main-header {
+  background: #1e5799;
+  background: -moz-linear-gradient(-45deg, #1e5799 0%, #213b65 100%);
+  background: -webkit-linear-gradient(-45deg, #1e5799 0%,#213b65 100%);
+  background: linear-gradient(135deg, #1e5799 0%,#213b65 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#213b65',GradientType=1 );
+  font-family: 'Verdana';
+  font-size: 30px;
+  color: #fff;
+  padding: 15px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .main-header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 250px;
+  }
+}
+
+.main-content {
+  padding: 15px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .main-content {
+    margin-left: 300px;
+  }
+}

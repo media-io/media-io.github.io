@@ -1,0 +1,8 @@
+<nav>
+  {% for item in site.data.memberships %}
+    <a href="{{ item.link }}">
+      <img src="assets/images/{{item.image}}" alt="Logo Media-IO" width="100px" />
+      {{ item.name }}
+    </a>
+  {% endfor %}
+</nav>
