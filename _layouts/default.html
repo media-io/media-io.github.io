@@ -1,13 +1,32 @@
 <!doctype html>
-<html>
+<html lang="{{ site.lang | default: 'en-US' }}">
   <head>
+    <link rel="icon" type="image/png" href="/assets/images/{{ site.favicon }}">
+    {% if site.google_analytics %}
+      <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '{{ site.google_analytics }}');
+      </script>
+    {% endif %}
     <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <!-- <link rel="stylesheet" href="/assets/css/style.css"> -->
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css?v=' | append: site.github.build_revision | relative_url }}">
+    <!-- <link rel="stylesheet" href="{{ '/assets/css/font-awesome.min.css?v=' | append: site.github.build_revision | relative_url }}"> -->
   </head>
   <body>
     {% include header.html %}
-    <div class="main-content">
+
+    {% if page.style == "no-margin" %}
+      <div class="main-content no-margin">
+    {% else %}
+      <div class="main-content">
+    {% endif %}      
       {{ content }}
     </div>
   </body>

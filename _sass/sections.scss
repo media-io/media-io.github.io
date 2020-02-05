@@ -1,0 +1,18 @@
+
+.section:nth-child(1) {
+	color: #1e5799;
+	background-color: #eee;
+	display: flex;
+	flex-direction: column;
+}
+
+.section:nth-child(1) div.filler {
+	flex: 1;
+}
+
+.section {
+	text-align: center;
+	display: inline-block;
+	min-height: 80vh;
+	width: 100%;
+}

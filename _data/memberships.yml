@@ -1,11 +1,16 @@
-- name: IMF
-  link: https://www.imfug.com/
-  image: IMF_Logo_Hashtag_Black_LowRes.png
-
-- name: DPP
-  link: https://digitalproductionpartnership.co.uk/
-  image: DPP_Member_Black_MinSize.png
 
 - name: SMPTE
   link: https://www.smpte.org/
   image: smpte_logo.png
+
+- name: DPP
+  link: https://www.thedpp.com/
+  image: DPP_Member_Black_MinSize.png
+
+- name: French Tech in the Alps
+  link: http://ftalps.com/
+  image: Logo_FTAlps_RS.png
+
+- name: IMF User Group
+  link: https://www.imfug.com/
+  image: IMF_Logo_Hashtag_Black_LowRes.png

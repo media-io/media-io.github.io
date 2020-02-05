@@ -5,5 +5,5 @@ title: Media-IO | Memberships
 ---
 # Memberships
 
-They are our members
+We are member of these groups:
 {% include memberships.html %}

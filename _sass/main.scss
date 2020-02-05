@@ -1,16 +1,24 @@
-@font-face {
-  font-family: "Castorgate";
-  src: url("/assets/fonts/Castorgate.eot");
-  src: url("/assets/fonts/Castorgate.woff") format("woff"),
-  url("/assets/fonts/Castorgate.svg#filename") format("svg");
-}
 
+a {
+  text-decoration: none;
+}
 
 body {
   margin: 0;
+  font-family: 'Verdana';
+}
+
+code {
+  padding: 2px 4px;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 0.9rem;
+  color: #567482;
+  background-color: #f3f6fa;
+  border-radius: 0.3rem;
 }
 
 .main-header {
+  box-shadow: 1px 1px 5px 0 #3864AA;
   background: #1e5799;
   background: -moz-linear-gradient(-45deg, #1e5799 0%, #213b65 100%);
   background: -webkit-linear-gradient(-45deg, #1e5799 0%,#213b65 100%);
@@ -24,17 +32,21 @@ body {
 
 @media only screen and (min-width: 1024px) {
   .main-header {
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     height: 100vh;
-    width: 250px;
+    width: 600px;
     display: flex;
     flex-direction: column;
   }
 
   .main-header .filler {
     flex: 1;
+  }
+
+  .main-header nav {
+    padding-left: 10px;
   }
 
   .network {
@@ -46,10 +58,13 @@ body {
 .main-content {
   padding: 15px;
 }
+.main-content.no-margin {
+  padding: 0px;
+}
 
 @media only screen and (min-width: 1024px) {
   .main-content {
-    margin-left: 300px;
+    margin-left: 650px;
   }
 }
 
@@ -63,10 +78,11 @@ body {
   color: rgba(255,255,255,.7);
   text-decoration: none;
 }
+
 .navigation-item{
-  font-family: "Castorgate";
-  letter-spacing: 3px;
-  font-size: 0.8em;
+  font-family: "Muli-Light", sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.3px;
 }
 
 .network-item {
@@ -85,4 +101,49 @@ body {
 
 .current {
   color: #fff;
+}
+
+.membership {
+  vertical-align: middle;
+  padding: 10px;
+}
+
+.posts {
+  padding-left: 0px;
+}
+
+.posts .post {
+  list-style: none;
+}
+
+.posts .post h2 {
+  color: #1e5799;
+  margin-bottom: 0px;
+}
+
+.posts .post-content {
+  min-height: 100px;
+  border-bottom: #d0d0d0 1px solid;
+}
+
+.posts hr {
+  color: #F00;
+}
+
+.posts .post .date {
+  font-size: 0.8em;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.post-image.left {
+  float: left;
+  padding-right: 20px;
+  padding-bottom: 15px;
+}
+.post-image.left img {
+  max-width: 80px;
+}
+post-image.bandeau {
+  height: 80px;
 }

@@ -7,9 +7,9 @@
   image: linkedin.svg
 
 - name: Twitter
-  link: /about.html
+  link: https://twitter.com/MediaIO_Fr
   image: twitter.svg
 
 - name: Facebook
-  link: /
+  link: https://www.facebook.com/mediaiofrance/
   image: facebook.svg
