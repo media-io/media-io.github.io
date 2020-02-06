@@ -23,18 +23,20 @@ title: Media-IO | News
           {% include date.html %}
         {% endif %}
       </div>
-      {% if post.image %}
-        <span class="post-image left">
-          <img src="/assets/images/{{post.image}}" />
-        </span>
-      {% endif %}
-      <div class="post-content">
-        {{ post.excerpt }}
-        {% if post.bandeau %}
-          <span class="post-image bandeau">
-            <img src="/assets/images/{{post.bandeau}}" />
+      <div class="wrapper">
+        {% if post.image %}
+          <span class="post-image left">
+            <img src="/assets/images/{{post.image}}" />
           </span>
         {% endif %}
+        <div class="post-content">
+          {{ post.excerpt }}
+          {% if post.bandeau %}
+            <span class="post-image bandeau">
+              <img src="/assets/images/{{post.bandeau}}" />
+            </span>
+          {% endif %}
+        </div>
       </div>
     </li>
   {% endfor %}

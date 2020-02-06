@@ -1,0 +1,148 @@
+
+.main-header {
+  box-shadow: 1px 1px 5px 0 #3864AA;
+  background: #1e5799;
+  background: -moz-linear-gradient(-45deg, #1e5799 0%, #213b65 100%);
+  background: -webkit-linear-gradient(-45deg, #1e5799 0%,#213b65 100%);
+  background: linear-gradient(135deg, #1e5799 0%,#213b65 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#213b65',GradientType=1 );
+  font-family: 'Verdana';
+  font-size: 30px;
+  color: #fff;
+  padding: 15px;
+}
+
+.main-header .logo {
+  text-align: center;
+}
+
+.main-header .logo img {
+  width: 250px;
+}
+
+.navigation-item{
+  font-family: "Muli-Light", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 18px;
+  letter-spacing: 0.3px;
+}
+
+.current {
+  color: #fff;
+}
+
+.hamburger span {
+  position: relative;
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  margin-top: 8px;
+}
+
+.hamburger span:after, .hamburger span:before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+}
+
+.hamburger span:before {
+    top: -8px;
+}
+
+.hamburger span:after {
+    bottom: -8px;
+}
+
+.hamburger.close span {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    background: transparent;
+}
+
+.hamburger.close span:before {
+    top: 0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border-radius: 0;
+}
+
+.hamburger.close span:after {
+    bottom: 0;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    border-radius: 0;
+}
+
+@media only screen and (min-width: 1024px) {
+  .main-header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-header .filler {
+    flex: 1;
+  }
+
+  .main-header nav {
+    padding-left: 10px;
+  }
+
+  .network {
+    margin-top: 15px;
+    margin-bottom: 45px;
+  }
+
+  .main-header .logo img {
+    width: 250px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .menu {
+    display: none;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 375px;
+    width: 100vw;
+    height: calc(100vh - 375px);
+    background-color: #1e5799;
+  }
+
+  .menu.open {
+    display: block;
+    opacity: 1;
+    padding: 20px;
+    background: -moz-linear-gradient(45deg, #1e5799 0%, #213b65 100%);
+    background: -webkit-linear-gradient(45deg, #1e5799 0%,#213b65 100%);
+    background: linear-gradient(45deg, #1e5799 0%,#213b65 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e5799', endColorstr='#213b65', GradientType=1);
+  }
+
+  .menu .item {
+    display: block !important;
+    margin-bottom: 8px !important;
+  }
+  .menu .network {
+    margin-top: 20px;
+  }
+}

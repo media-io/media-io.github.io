@@ -15,18 +15,14 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ page.title }}</title>
-    <!-- <link rel="stylesheet" href="/assets/css/style.css"> -->
+    <script src="/assets/js/mermaid.min.js"></script>
     <link rel="stylesheet" href="{{ '/assets/css/styles.css?v=' | append: site.github.build_revision | relative_url }}">
-    <!-- <link rel="stylesheet" href="{{ '/assets/css/font-awesome.min.css?v=' | append: site.github.build_revision | relative_url }}"> -->
+    <link rel="stylesheet" href="{{ '/assets/css/font-awesome.min.css?v=' | append: site.github.build_revision | relative_url }}">
   </head>
   <body>
     {% include header.html %}
 
-    {% if page.style == "no-margin" %}
-      <div class="main-content no-margin">
-    {% else %}
-      <div class="main-content">
-    {% endif %}      
+    <div class="main-content {%if page.style == 'no-margin' %}no-margin{%endif%} {%if page.style == 'centered' %}centered{%endif%}">
       {{ content }}
     </div>
   </body>

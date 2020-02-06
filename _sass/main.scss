@@ -5,7 +5,10 @@ a {
 
 body {
   margin: 0;
-  font-family: 'Verdana';
+  font-family: "Muli-Light", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #444d50;
 }
 
 code {
@@ -17,44 +20,6 @@ code {
   border-radius: 0.3rem;
 }
 
-.main-header {
-  box-shadow: 1px 1px 5px 0 #3864AA;
-  background: #1e5799;
-  background: -moz-linear-gradient(-45deg, #1e5799 0%, #213b65 100%);
-  background: -webkit-linear-gradient(-45deg, #1e5799 0%,#213b65 100%);
-  background: linear-gradient(135deg, #1e5799 0%,#213b65 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#213b65',GradientType=1 );
-  font-family: 'Verdana';
-  font-size: 30px;
-  color: #fff;
-  padding: 15px;
-}
-
-@media only screen and (min-width: 1024px) {
-  .main-header {
-    position: fixed;
-    left: 0;
-    top: 0;
-    height: 100vh;
-    width: 600px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .main-header .filler {
-    flex: 1;
-  }
-
-  .main-header nav {
-    padding-left: 10px;
-  }
-
-  .network {
-    margin-top: 15px;
-    margin-bottom: 45px;
-  }
-}
-
 .main-content {
   padding: 15px;
 }
@@ -62,9 +27,13 @@ code {
   padding: 0px;
 }
 
+.main-content.centered {
+  text-align: center
+}
+
 @media only screen and (min-width: 1024px) {
   .main-content {
-    margin-left: 650px;
+    margin-left: calc(30vw + 30px);
   }
 }
 
@@ -77,12 +46,6 @@ code {
 .network-item {
   color: rgba(255,255,255,.7);
   text-decoration: none;
-}
-
-.navigation-item{
-  font-family: "Muli-Light", sans-serif;
-  font-size: 18px;
-  letter-spacing: 0.3px;
 }
 
 .network-item {
@@ -99,51 +62,14 @@ code {
   width: 20px;
 }
 
-.current {
-  color: #fff;
-}
-
 .membership {
-  vertical-align: middle;
   padding: 10px;
 }
 
-.posts {
-  padding-left: 0px;
+.membership span {
+  vertical-align: middle;
 }
 
-.posts .post {
-  list-style: none;
-}
-
-.posts .post h2 {
-  color: #1e5799;
-  margin-bottom: 0px;
-}
-
-.posts .post-content {
-  min-height: 100px;
-  border-bottom: #d0d0d0 1px solid;
-}
-
-.posts hr {
-  color: #F00;
-}
-
-.posts .post .date {
-  font-size: 0.8em;
-  color: #666;
-  margin-bottom: 20px;
-}
-
-.post-image.left {
-  float: left;
-  padding-right: 20px;
-  padding-bottom: 15px;
-}
-.post-image.left img {
-  max-width: 80px;
-}
-post-image.bandeau {
-  height: 80px;
+.membership span:nth-child(1) {
+  margin-right: 20px;
 }

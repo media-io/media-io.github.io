@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Contact
+style: centered
 ---
 
 # Contact us

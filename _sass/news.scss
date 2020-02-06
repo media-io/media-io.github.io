@@ -1,0 +1,51 @@
+
+.posts {
+  padding-left: 0px;
+}
+
+.posts .post {
+  list-style: none;
+}
+
+.posts .post h2 {
+  color: #1e5799;
+  margin-bottom: 0px;
+}
+
+.posts .post-content {
+  min-height: 100px;
+}
+
+.posts hr {
+  color: #F00;
+}
+
+.posts .post .date {
+  font-size: 0.8em;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.posts .post .wrapper {
+  display: flex;
+  border-bottom: #d0d0d0 1px solid;
+}
+
+.post-image.left {
+  float: left;
+  padding-right: 20px;
+  padding-bottom: 15px;
+}
+
+.post-image.left img {
+  max-width: 80px;
+}
+
+.post-image.bandeau {
+  height: 80px;
+}
+
+.post-image.bandeau img {
+  max-width: 100%;
+}
+
