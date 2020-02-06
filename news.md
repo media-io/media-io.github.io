@@ -4,6 +4,14 @@ title: Media-IO | News
 ---
 
 # News & Events
+<div class="actions subscribe" style="text-align: center;">
+  <a href="{{site.newsletter_action}}" target="_blank">
+    <span class="button">
+      <i class="fa fa-external-link"></i>
+      Subscribe to our newsletter
+    </span>
+  </a>
+</div>
 
 <ul class="posts">
   {% for post in site.posts %}

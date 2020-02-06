@@ -43,9 +43,10 @@ h1#contact-us {
 .contact-form .item,
 .contact-form .actions {
   margin-top: 30px;
+  text-align: left;
 }
 
-.contact-form .button {
+.actions .button {
   display: inline-block;
   padding: 9px 10px 10px;
   font-size: 13px;
@@ -58,3 +59,15 @@ h1#contact-us {
   letter-spacing: 0;
   cursor: pointer;
 }
+
+
+.subscribe .button {
+  padding: 20px;
+  font-size: 1.3em;
+}
+
+.actions .button:hover {
+  background: #6ed8bf;
+  border: 2px solid #6ed8bf;
+}
+

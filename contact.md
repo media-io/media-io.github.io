@@ -7,7 +7,7 @@ style: centered
 # Contact us
 
 <div class="contact-form">
-  <form action="https://formspree.io/xnqdvbaj" method="POST">
+  <form action="{{site.contact_action}}" method="POST">
     <div class="item">
       <label>
         Email Address *
@@ -30,4 +30,14 @@ style: centered
       <input type="submit" value="Send Message" class="button">
     </div>
   </form>
+</div>
+
+# Newsletter
+<div class="actions subscribe">
+  <a href="{{site.newsletter_action}}" target="_blank">
+    <span class="button">
+      <i class="fa fa-external-link"></i>
+      Subscribe to our newsletter
+    </span>
+  </a>
 </div>

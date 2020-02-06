@@ -1,7 +1,3 @@
-- name: Newsletter
-  link: http://eepurl.com/gr3E0X 
-  image: newsletter.svg
-
 - name: LinkedIn
   link: https://www.linkedin.com/company/media-io/
   image: linkedin.svg
