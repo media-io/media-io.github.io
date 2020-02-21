@@ -1,20 +1,17 @@
-- name: Guignol Web-Player
+- name: Home
   link: /
+
+- name: Guignol Web-Player
+  link: /guignol.html
 
 - name: Media Cloud AI
   link: /media_cloud_ai.html
 
-- name: Memberships
-  link: /memberships.html
-  
 - name: News
   link: /news.html
 
 - name: Contact
   link: /contact.html
-
-- name: Company
-  link: /company.html
 
 - name: Privacy Policy
   link: /privacy_policy.html

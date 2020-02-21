@@ -5,11 +5,17 @@
 
 .posts .post {
   list-style: none;
+  background-color: #eee;
+  border-radius: 20px;
+  margin: 10px 0px;
 }
 
 .posts .post h2 {
   color: #1e5799;
   margin-bottom: 0px;
+  padding: 10px 10px 0px 10px;
+  background-color: #ddd;
+  border-radius: 15px 20px 0 0;
 }
 
 .posts .post-content {
@@ -22,19 +28,23 @@
 
 .posts .post .date {
   font-size: 0.8em;
-  color: #666;
-  margin-bottom: 20px;
+  color: #444;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  background-color: #ddd;
 }
 
 .posts .post .wrapper {
   display: flex;
-  border-bottom: #d0d0d0 1px solid;
+  padding: 0px 10px 10px 10px;
+  // border-bottom: #d0d0d0 1px solid;
 }
 
 .post-image.left {
   float: left;
-  padding-right: 20px;
-  padding-bottom: 15px;
+  padding: 20px 20px 15px 0px;
+  // padding-right: 20px;
+  // padding-bottom: 15px;
 }
 
 .post-image.left img {

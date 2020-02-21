@@ -1,0 +1,27 @@
+
+@media screen and (min-width: 1024px) {
+	.customers {
+		display: flex;
+	}
+
+
+	.customers .customer img {
+		height: 50px;
+	}
+}
+
+@media screen and (max-width: 1023px) {
+	.customers .customer {
+		padding: 15px 0px;
+	}
+
+	.customers .customer img {
+		width: 150px;
+	}
+}
+
+.customers .filler,
+.customers .customer {
+	flex: 1;
+}
+

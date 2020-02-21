@@ -1,7 +1,7 @@
 ---
 layout: default
 style: no-margin
-title: Media-IO
+title: Media-IO | Guignol Web-Player
 ---
 <div class="section">
   <div class="filler"></div>
