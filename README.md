@@ -1,3 +1,3 @@
-# media-io.github.io
+# [media-io.com](https://media-io.com)
 
-Website
+Official website repository
