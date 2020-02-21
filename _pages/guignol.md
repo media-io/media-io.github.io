@@ -2,6 +2,7 @@
 layout: default
 style: no-margin
 title: Media-IO | Guignol Web-Player
+permalink: /guignol
 ---
 <div class="section">
   <div class="filler"></div>

@@ -1,6 +1,6 @@
 ---
 title: 1<sup>th</sup> Birthday
-image: first_birthday.gif
+image: 2020/first_birthday.gif
 ---
 
 Media-IO celebrates it's 1<sup>st</sup> anniversary !  

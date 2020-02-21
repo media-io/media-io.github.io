@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Media-IO | Privacy Policy
-
+permalink: /privacy-policy
 ---
 # Privacy Policy
 

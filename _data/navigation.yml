@@ -2,16 +2,16 @@
   link: /
 
 - name: Guignol Web-Player
-  link: /guignol.html
+  link: /guignol
 
 - name: Media Cloud AI
-  link: /media_cloud_ai.html
+  link: /media-cloud-ai
 
 - name: News
-  link: /news.html
+  link: /news
 
 - name: Contact
-  link: /contact.html
+  link: /contact
 
 - name: Privacy Policy
-  link: /privacy_policy.html
+  link: /privacy-policy

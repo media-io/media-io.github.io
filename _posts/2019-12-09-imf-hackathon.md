@@ -1,6 +1,6 @@
 ---
 title: IMF Hackathon
-image: DPP_Member_Black_MinSize.png
+image: 2019/DPP_Member_Black_MinSize.png
 ---
 
 The DPP has launched its first hackathon around IMF on the 6th of November ([link](https://www.thedpp.com/tech/versioning/imf-mm-api/hackathon/){:target="_blank"}).

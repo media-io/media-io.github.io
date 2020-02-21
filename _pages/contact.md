@@ -1,7 +1,8 @@
 ---
 layout: default
-title: Contact
+title: Media-IO | Contact
 style: centered
+permalink: /contact
 ---
 
 # Contact us

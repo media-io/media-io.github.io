@@ -2,6 +2,7 @@
 layout: default
 style: no-margin
 title: Media-IO | Media Cloud AI
+permalink: /media-cloud-ai
 ---
 <div class="section">
   <div class="filler"></div>
