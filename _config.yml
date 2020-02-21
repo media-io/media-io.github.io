@@ -1,0 +1,45 @@
+favicon: mediaio_logo.png
+logo: media-io-white-horizontal.svg
+favicon: mediaio_logo.png
+title: Media-IO
+tagline: Develop your next video platforms
+description: Machin
+google_analytics: UA-101359555-1
+contact_action: https://formspree.io/xnqdvbaj
+newsletter_action: http://eepurl.com/gr3E0X
+future: true
+
+url: "https://media-io.com"
+
+google_site_verification: google53f29fa8b6db8d24.html
+
+twitter:
+  username: MediaIO_Fr
+  card: summary
+
+social:
+  name: Ben Balter
+  links:
+    - https://twitter.com/MediaIO_Fr
+    - https://www.facebook.com/mediaiofrance/
+    - https://www.linkedin.com/company/33283488
+    - https://github.com/media-io
+
+# webmaster_verifications:
+#   google: 1234
+#   bing: 1234
+#   alexa: 1234
+#   yandex: 1234
+#   baidu: 1234
+
+include: ['_pages']
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+gems:
+  - jekyll-sitemap
+
+whitelist:
+  - jekyll-sitemap

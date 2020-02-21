@@ -1,0 +1,14 @@
+<div class="memberships">
+  {% for item in site.data.memberships %}
+    <div class="membership">
+      <span>
+        <a href="{{ item.link }}" target="_blank">
+          <img src="assets/images/{{item.image}}" width="100px" />
+        </a>
+      </span>
+      <span>
+        {{ item.description }}
+      </span>
+    </div>
+  {% endfor %}
+</div>

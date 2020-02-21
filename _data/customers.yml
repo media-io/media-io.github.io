@@ -1,0 +1,12 @@
+
+- name: France Télévisions
+  link: https://www.francetelevisions.fr
+  image: francetelevision-logo.gif
+
+- name: Mikros Image - Technocolor
+  link: https://www.mikrosimage.com
+  image: mikros_technicolor.gif
+
+- name: CST
+  link: https://www.cst.fr/
+  image: logo_cst.jpg

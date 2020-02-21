@@ -1,0 +1,17 @@
+- name: Home
+  link: /
+
+- name: Guignol Web-Player
+  link: /guignol
+
+- name: Media Cloud AI
+  link: /media-cloud-ai
+
+- name: News
+  link: /news
+
+- name: Contact
+  link: /contact
+
+- name: Privacy Policy
+  link: /privacy-policy

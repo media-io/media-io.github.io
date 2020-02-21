@@ -1,0 +1,13 @@
+<div class="customers">
+  <div class="filler"></div>
+  {% for item in site.data.customers %}
+    <div class="customer">
+      <span>
+        <a href="{{ item.link }}" target="_blank">
+          <img src="assets/images/customers/{{item.image}}" />
+        </a>
+      </span>
+    </div>
+  {% endfor %}
+  <div class="filler"></div>
+</div>

@@ -1,0 +1,23 @@
+<div class="main-header">
+  <div class="hamburger">
+    <span></span>
+  </div>
+  <div class="filler"></div>
+  <div class=logo>
+    <img src="/assets/images/media-io_logo_white.png" alt="Logo Media-IO" />
+  </div>
+  <div class="filler"></div>
+  <div class="menu">
+    {% include navigation.html %}
+    {% include network.html %}
+  </div>
+
+  <script type="text/javascript">
+    var hamburger = document.querySelector('.hamburger');
+    var menu = document.querySelector('.menu');
+    hamburger.onclick = function () {
+        menu.classList.toggle('open');
+        hamburger.classList.toggle('close');
+    };
+  </script>
+</div>
