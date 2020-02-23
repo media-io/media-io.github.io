@@ -20,7 +20,7 @@ permalink: /news
       <h2>
         {{ post.title }}
       </h2>
-      <div class=date>
+      <div class="date">
         {% if post.start_date %}
           {% assign currentdate = post.start_date %}
           {% include date.html %}
