@@ -2,11 +2,12 @@
 @media screen and (min-width: 1024px) {
 	.customers {
 		display: flex;
+		padding-top: 60px;
 	}
 
 
 	.customers .customer img {
-		height: 50px;
+		height: 80px;
 	}
 }
 

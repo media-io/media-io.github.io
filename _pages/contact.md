@@ -33,7 +33,8 @@ permalink: /contact
   </form>
 </div>
 
-# Newsletter
+<br/>
+<br/>
 Want to follow us, subscribe below:
 <div class="actions subscribe">
 
