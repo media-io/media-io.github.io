@@ -1,8 +1,8 @@
 - name: Home
   link: /
 
-- name: Guignol Web-Player
-  link: /guignol
+- name: Master Web-Player
+  link: /master_web_player
 
 - name: Media Cloud AI
   link: /media-cloud-ai

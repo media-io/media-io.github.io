@@ -37,7 +37,6 @@ permalink: /contact
 <br/>
 Want to follow us, subscribe below:
 <div class="actions subscribe">
-
   <a href="{{site.newsletter_action}}" target="_blank">
     <span class="button">
       <i class="fa fa-external-link"></i>
