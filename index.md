@@ -28,7 +28,7 @@ style: no-margin
     That's why we have started the company by providing development and software architecture expertises. We helps on catalog managment, massive stream processing, web-delivery of contents.
   </div>
   <p>
-    In parallel, we have started internally a really exiting projects named <a href="/master_web_player">Master Web Player</a> - a web-player for broadcast and cinema file format.
+    In parallel, we have started internally a really exiting projects named <a href="/master-web-player">Master Web Player</a> - a web-player for broadcast and cinema file format.
   </p>
 </div>
 

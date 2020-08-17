@@ -1,9 +1,9 @@
 favicon: mediaio_logo.png
 logo: media-io-white-horizontal.svg
 favicon: mediaio_logo.png
-title: Media-IO
-tagline: Develop your next video platforms, specialists of MXF, IMF, ProRes and Jpeg2000
-description: Develop your next video platforms, specialists of MXF, IMF, ProRes and Jpeg2000
+title: Media-IO, Develop your next video platforms
+tagline: Media-IO generate solutions based on MXF, IMF, ProRes, Jpeg2000. Master Web Player is an product able to read ProRes and Jpeg2000 directly into the web-browser
+description: Media-IO generate solutions based on MXF, IMF, ProRes, Jpeg2000. Master Web Player is an product able to read ProRes and Jpeg2000 directly into the web-browser
 google_analytics: UA-101359555-1
 contact_action: https://formspree.io/xnqdvbaj
 newsletter_action: http://eepurl.com/gr3E0X
@@ -35,6 +35,7 @@ social:
 include: ['_pages']
 
 plugins:
+  - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
 

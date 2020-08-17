@@ -2,7 +2,7 @@
 layout: default
 style: no-margin
 title: Media-IO | Master Web-Player
-permalink: /master_web_player
+permalink: /master-web-player
 ---
 <div class="section">
   <div class="filler"></div>
@@ -13,7 +13,7 @@ permalink: /master_web_player
   <div class="filler"></div>
 </div>
 <div class="section">
-	<img src="/assets/images/mwp_screenshot_1.png" width="70%"/>
+	<img alt="Master Web Player screen" src="/assets/images/mwp_screenshot_1.png" width="70%"/>
 </div>
 <div class="section">
   <p>Master Web-Player enables direct playback of media content stored in the cloud.</p>
