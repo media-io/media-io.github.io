@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Media-IO
+title: Media-IO, Develop your next video platforms
 style: no-margin
 ---
 
