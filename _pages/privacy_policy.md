@@ -2,6 +2,7 @@
 layout: default
 title: Media-IO | Privacy Policy
 permalink: /privacy-policy
+image: assets/images/mediaio_logo.png
 ---
 # Privacy Policy
 

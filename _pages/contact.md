@@ -3,6 +3,7 @@ layout: default
 title: Media-IO | Contact
 style: centered
 permalink: /contact
+image: assets/images/mediaio_logo.png
 ---
 
 # Contact us

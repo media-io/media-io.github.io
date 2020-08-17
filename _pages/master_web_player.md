@@ -3,6 +3,7 @@ layout: default
 style: no-margin
 title: Media-IO | Master Web-Player
 permalink: /master-web-player
+image: assets/images/mediaio_logo.png
 ---
 <div class="section">
   <div class="filler"></div>

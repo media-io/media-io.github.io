@@ -2,6 +2,7 @@
 layout: default
 title: Media-IO, Develop your next video platforms
 style: no-margin
+image: assets/images/mediaio_logo.png
 ---
 
 <div class="section">

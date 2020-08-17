@@ -2,6 +2,7 @@
 layout: default
 title: Media-IO | News
 permalink: /news
+image: assets/images/mediaio_logo.png
 ---
 
 # News & Events
